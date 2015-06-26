@@ -16,6 +16,10 @@ echo "module Foundation
   VERSION = $version
 end" > lib/foundation/version.rb
 
+# Copy over foundation.js for compass projects
+rm -rf templates/project/js
+cp -R bower_components/foundation/js templates/project/js
+
 # create vendor/assets/javascripts/foundation.js (rails inclusions //=require foundation, ...)
 cd assets/javascripts
 for f in foundation/*.js; do echo "//= require $f" | sed 's/.js//' >> foundation.js ; done
