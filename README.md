@@ -1,13 +1,14 @@
 # Foundation gem
 
-TODO: Write a gem description
+A repackaging of [Foundation](http://foundation.zurb.com/) that works with Rails, Sprockets and Compass. No npm or bower required, just add it your Gemfile.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'foundation-sass'
+gem 'foundation-sass',
+    :git => 'https://github.com/ryanmark/foundation-sass.git'
 ```
 
 And then execute:
@@ -20,7 +21,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To use all of foundation, include it in your scss and javascript:
+
+```scss
+@import "foundation";
+```
+
+```javascript
+//= require jquery
+//= require foundation
+$(document).foundation();
+```
 
 ## Contributing
 
