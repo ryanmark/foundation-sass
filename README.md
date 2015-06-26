@@ -15,10 +15,6 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install foundation-sass
-
 ## Usage
 
 To use all of foundation, include it in your scss and javascript:
