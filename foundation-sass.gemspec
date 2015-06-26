@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Ryan Mark']
   spec.email         = ['ryan@mrk.cc']
   spec.summary       = 'Just a plain old gem'
-  spec.description   = 'TODO: Write a longer description. Optional.'
-  spec.homepage      = ''
+  #spec.description   = 'TODO: Write a longer description. Optional.'
+  spec.homepage      = 'https://github.com/ryanmark/foundation-sass'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
