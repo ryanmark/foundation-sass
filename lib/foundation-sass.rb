@@ -1,4 +1,5 @@
-require 'foundation-sass/version'
+require 'foundation/version'
+
 # Foundation for SASS
 # Cribbed by Bootstrap-sass
 # This gem makes Foundation assets available to rails, sprockets or compass
