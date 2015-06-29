@@ -24,4 +24,7 @@ cp -R bower_components/foundation/js templates/project/js
 # create vendor/assets/javascripts/foundation.js (rails inclusions //=require foundation, ...)
 cd assets/javascripts
 echo "if (typeof jQuery === 'undefined') throw new Error('Foundation requires jQuery');" > foundation.js
-for f in foundation/*.js; do echo "//= require $f" | sed 's/.js//' >> foundation.js ; done
+echo "//= require foundation" >> foundation.js
+for f in foundation/foundation.*.js; do
+  echo "//= require $f" | sed 's/.js//' >> foundation.js
+done
