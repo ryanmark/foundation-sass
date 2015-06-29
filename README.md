@@ -30,7 +30,7 @@ In your scss:
 In your javascript (if you're using sprockets or rails):
 
 ```javascript
-//= require jquery
+//= require vendor/jquery
 //= require foundation
 $(document).foundation();
 ```
