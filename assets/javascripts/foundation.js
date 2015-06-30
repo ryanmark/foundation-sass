@@ -1,5 +1,4 @@
-if (typeof jQuery === 'undefined') throw new Error('Foundation requires jQuery');
-//= require foundation
+//= require foundation/foundation
 //= require foundation/foundation.abide
 //= require foundation/foundation.accordion
 //= require foundation/foundation.alert
