@@ -13,7 +13,9 @@ gem 'foundation-sass',
 
 And then execute:
 
-    $ bundle
+```bash
+$ bundle
+```
 
 ## Usage
 
@@ -70,6 +72,75 @@ This will create a new Compass project with the following files in it:
 
 Some foundation-sass mixins may conflict with the Compass ones.
 If this happens, change the import order so that Compass mixins are loaded later.
+
+## Customization
+
+You can configure foundation via scss variables. Make sure you defined your variables before you import foundation or any of it's components. [Check out the list of settings](https://github.com/ryanmark/foundation-sass/blob/master/assets/stylesheets/foundation/_settings.scss).
+
+### Components
+
+If you don't want to use all of foundation, you can choose components to load. Below are example files for sass and sprockets that load all components.
+
+```scss
+@import 'foundation/components/grid';
+@import 'foundation/components/accordion';
+@import 'foundation/components/alert-boxes';
+@import 'foundation/components/block-grid';
+@import 'foundation/components/breadcrumbs';
+@import 'foundation/components/button-groups';
+@import 'foundation/components/buttons';
+@import 'foundation/components/clearing';
+@import 'foundation/components/dropdown';
+@import 'foundation/components/dropdown-buttons';
+@import 'foundation/components/flex-video';
+@import 'foundation/components/forms';
+@import 'foundation/components/icon-bar';
+@import 'foundation/components/inline-lists';
+@import 'foundation/components/joyride';
+@import 'foundation/components/keystrokes';
+@import 'foundation/components/labels';
+@import 'foundation/components/magellan';
+@import 'foundation/components/orbit';
+@import 'foundation/components/pagination';
+@import 'foundation/components/panels';
+@import 'foundation/components/pricing-tables';
+@import 'foundation/components/progress-bars';
+@import 'foundation/components/range-slider';
+@import 'foundation/components/reveal';
+@import 'foundation/components/side-nav';
+@import 'foundation/components/split-buttons';
+@import 'foundation/components/sub-nav';
+@import 'foundation/components/switches';
+@import 'foundation/components/tables';
+@import 'foundation/components/tabs';
+@import 'foundation/components/thumbs';
+@import 'foundation/components/tooltips';
+@import 'foundation/components/top-bar';
+@import 'foundation/components/type';
+@import 'foundation/components/offcanvas';
+@import 'foundation/components/visibility';
+```
+
+```javascript
+//= require foundation/foundation
+//= require foundation/foundation.abide
+//= require foundation/foundation.accordion
+//= require foundation/foundation.alert
+//= require foundation/foundation.clearing
+//= require foundation/foundation.dropdown
+//= require foundation/foundation.equalizer
+//= require foundation/foundation.interchange
+//= require foundation/foundation.joyride
+//= require foundation/foundation.magellan
+//= require foundation/foundation.offcanvas
+//= require foundation/foundation.orbit
+//= require foundation/foundation.reveal
+//= require foundation/foundation.slider
+//= require foundation/foundation.tab
+//= require foundation/foundation.tooltip
+//= require foundation/foundation.topbar
+$(document).foundation();
+```
 
 ## Contributing
 
