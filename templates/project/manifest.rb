@@ -4,7 +4,7 @@ manifest = Pathname.new(File.dirname(__FILE__))
 assets   = File.expand_path('../../assets', manifest)
 
 # Stylesheet importing foundation
-stylesheet 'styles.sass'
+stylesheet 'app.scss'
 
 # Foundation variable overrides file
 stylesheet File.join(assets, 'stylesheets', 'foundation', '_settings.scss'), :to => '_settings.scss'
