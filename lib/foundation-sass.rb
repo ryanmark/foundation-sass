@@ -73,7 +73,7 @@ module Foundation
     end
 
     def register_rails_engine
-      require 'foundation-sass/engine'
+      require 'foundation/engine'
     end
 
     def register_sprockets
