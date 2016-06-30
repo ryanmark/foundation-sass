@@ -1,0 +1,19 @@
+{
+  "name": "foundation-sass",
+  "version": "5.5.3",
+  "description": "Foundation 5",
+  "main": "templates/project/js/foundation.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanmark/foundation-sass.git"
+  },
+  "author": "Ryan Mark",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryanmark/foundation-sass/issues"
+  },
+  "homepage": "https://github.com/ryanmark/foundation-sass#readme"
+}
