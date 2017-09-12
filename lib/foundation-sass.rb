@@ -46,7 +46,7 @@ module Foundation
     end
 
     def rails?
-      defined?(::Rails)
+      defined?(::Rails::Engine)
     end
 
     private
